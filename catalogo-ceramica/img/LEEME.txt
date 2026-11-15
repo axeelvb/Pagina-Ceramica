@@ -1,0 +1,12 @@
+Pon aquí las fotos de tus piezas (jpg o png).
+
+Ejemplo de nombres usados en el proyecto de ejemplo:
+- vasija-alta.jpg
+- cuenco-avena.jpg
+- taza-oxido.jpg
+- figura-luna.jpg
+- jarron-cuello.jpg
+- plato-hondo.jpg
+
+Consejo: exporta las fotos ya recortadas en una proporción vertical
+(por ejemplo 4:5) para que se vean parejas en la cuadrícula del catálogo.

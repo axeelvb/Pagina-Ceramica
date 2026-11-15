@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diany ART: Cerámicas y mucho más</title>
+  <meta name="description" content="Cerámicas hechas y pintadas a mano en Ibarra, Ecuador. Catálogo, promociones por docena y cursos de pintura en cerámica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Íconos reutilizables (se usan con <svg><use href="#i-..."/></svg>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2c-2.7 0-3 0-4.1.1-1 0-1.8.2-2.4.5-.7.3-1.3.6-1.8 1.2-.6.5-.9 1.1-1.2 1.8-.3.6-.4 1.4-.5 2.4C2 9 2 9.3 2 12s0 3 .1 4.1c0 1 .2 1.8.5 2.4.3.7.6 1.3 1.2 1.8.5.6 1.1.9 1.8 1.2.6.3 1.4.4 2.4.5H12c2.7 0 3 0 4.1-.1 1 0 1.8-.2 2.4-.5.7-.3 1.3-.6 1.8-1.2.6-.5.9-1.1 1.2-1.8.3-.6.4-1.4.5-2.4V12c0-2.7 0-3-.1-4.1 0-1-.2-1.8-.5-2.4-.3-.7-.6-1.3-1.2-1.8-.5-.6-1.1-.9-1.8-1.2-.6-.3-1.4-.4-2.4-.5H12Zm0 1.8h4c.9 0 1.4.2 1.8.3.4.2.7.4 1.1.7.3.4.5.7.7 1.1.1.4.3.9.3 1.8v8.6c0 .9-.2 1.4-.3 1.8-.2.4-.4.7-.7 1.1-.4.3-.7.5-1.1.7-.4.1-.9.3-1.8.3H8c-.9 0-1.4-.2-1.8-.3-.4-.2-.7-.4-1.1-.7-.3-.4-.5-.7-.7-1.1-.1-.4-.3-.9-.3-1.8V8c0-.9.2-1.4.3-1.8.2-.4.4-.7.7-1.1.4-.3.7-.5 1.1-.7.4-.1.9-.3 1.8-.3h4Z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3Z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.7a5.7 5.7 0 1 0 4.9 5.7V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-bolsa" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#">Diany <span>ART</span></a>
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ---------- Hero ---------- -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-texto">
+          <p class="kicker entra">Cerámicas hechas a mano · Ibarra</p>
+          <h1 data-palabras>Piezas que empiezan siendo nada y terminan siendo parte de tu hogar.</h1>
+          <p class="hero-text entra" style="--d:750ms">Cada objeto de este catálogo se hace en pequeños lotes, se pinta a mano y sale hecho con mucho amor y un toque único. Explora las colecciones y escríbenos si alguna pieza te interesa.</p>
+          <div class="hero-acciones entra" style="--d:950ms">
+            <a class="btn btn-primario btn-grande" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn-secundario btn-grande" href="#cursos">Conoce los cursos</a>
+          </div>
+        </div>
+        <div class="hero-collage" aria-hidden="true">
+          <figure class="papel c1" style="--d:300ms"><img src="img/angelitos.jpeg" alt=""></figure>
+          <figure class="papel c2" style="--d:450ms"><img src="img/gatitocuello.jpeg" alt=""></figure>
+          <figure class="papel c3" style="--d:600ms"><img src="img/florloto.jpeg" alt=""></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Catálogo ---------- -->
+    <section class="catalogo" id="catalogo">
+      <div class="wrap">
+        <div class="seccion-head revelar">
+          <div>
+            <p class="kicker">Nuestras piezas</p>
+            <h2>Catálogo</h2>
+          </div>
+          <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+
+        <div class="grid" id="grid-piezas"></div>
+        <p class="sin-resultados oculto" id="sin-resultados">No hay piezas en esta categoría todavía.</p>
+        <div class="paginacion" id="paginacion"></div>
+      </div>
+    </section>
+
+    <!-- Plantilla única de tarjeta: el JS la rellena con los datos de js/piezas.js -->
+    <template id="plantilla-pieza">
+      <article class="pieza">
+        <div class="pieza-img">
+          <img loading="lazy" src="" alt="">
+          <span class="pieza-tag"></span>
+        </div>
+        <div class="pieza-info">
+          <h3></h3>
+          <p class="pieza-detalle"></p>
+          <div class="pieza-pie">
+            <p class="pieza-precio"></p>
+            <button type="button" class="btn btn-primario btn-agregar">Agregar</button>
+            <span class="stepper">
+              <button type="button" class="menos" aria-label="Quitar una">−</button>
+              <span class="stepper-num">0</span>
+              <button type="button" class="mas" aria-label="Agregar una">+</button>
+            </span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <!-- ---------- Promociones ---------- -->
+    <section class="promos" id="promociones">
+      <div class="wrap">
+        <div class="seccion-head revelar">
+          <div>
+            <p class="kicker">Compra más, paga menos</p>
+            <h2>Promociones</h2>
+          </div>
+        </div>
+
+        <div class="promo-grid" data-escalonar>
+          <article class="promo promo-destacada">
+            <span class="promo-etiqueta">Por docena</span>
+            <h3>12 piezas o más, precio especial</h3>
+            <p>Llevando una docena de la misma pieza (o combinadas) obtienes descuento sobre el total. Ideal para recuerdos, eventos y emprendimientos.</p>
+          </article>
+          <article class="promo">
+            <span class="promo-etiqueta">Al por mayor</span>
+            <h3>Para tiendas y revendedores</h3>
+            <p>¿Tienes un negocio de manualidades o decoración? Pide nuestra lista de precios mayoristas en piezas sin pintar o terminadas.</p>
+          </article>
+          <article class="promo">
+            <span class="promo-etiqueta">Fechas especiales</span>
+            <h3>Navidad, Pascua y más</h3>
+            <p>Armamos combos de temporada y pedidos personalizados con los colores y nombres que quieras.</p>
+          </article>
+        </div>
+
+        <div class="promo-cta revelar">
+          <p>Para más información sobre descuentos, contáctanos y te armamos una cotización.</p>
+          <a class="btn btn-primario btn-grande" target="_blank" rel="noopener"
+             href="https://wa.me/593979686640?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20promociones%20por%20docena">
+            <svg class="icono"><use href="#i-whatsapp"/></svg> Consultar promociones
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Cursos ---------- -->
+    <section class="cursos" id="cursos">
+      <div class="wrap cursos-inner">
+        <div class="cursos-texto revelar">
+          <p class="kicker">Aprende con nosotros</p>
+          <h2>Cursos de pintura en cerámica</h2>
+          <p>Ven a nuestro taller y aprende a pintar tus propias piezas: técnicas de base, sombreado, detalles y acabados. No necesitas experiencia previa y todos los materiales están incluidos.</p>
+          <a class="btn btn-claro btn-grande" target="_blank" rel="noopener"
+             href="https://wa.me/593979686640?text=Hola%2C%20quisiera%20inscribirme%20en%20un%20curso">
+            <svg class="icono"><use href="#i-whatsapp"/></svg> Reservar mi cupo
+          </a>
+        </div>
+
+        <div class="cursos-datos" data-escalonar>
+          <div class="dato">
+            <svg class="icono-grande"><use href="#i-reloj"/></svg>
+            <div>
+              <h3>Horarios</h3>
+              <ul class="horarios">
+                <li><span>Martes y jueves</span><span>15:00 – 17:00</span></li>
+                <li><span>Sábados</span><span>09:00 – 12:00</span></li>
+                <li><span>Grupos privados</span><span>Bajo reserva</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dato">
+            <svg class="icono-grande"><use href="#i-pin"/></svg>
+            <div>
+              <h3>Dirección</h3>
+              <p>Av. Abelardo Páez Torres y Pasaje F<br>Ibarra – Ecuador</p>
+              <a class="enlace" target="_blank" rel="noopener" href="https://maps.app.goo.gl/yWSSvvYzqKjiyXy78">Ver en Google Maps →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Contacto ---------- -->
+    <section class="contacto" id="contacto">
+      <div class="wrap contacto-inner revelar">
+        <h2>¿Te interesa una pieza?</h2>
+        <p>Escríbenos para una mejor asesoría.</p>
+        <a class="btn btn-primario btn-grande" target="_blank" rel="noopener" href="https://wa.me/593979686640">
+          <svg class="icono"><use href="#i-whatsapp"/></svg> Nuestro WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ---------- Footer ---------- -->
+  <!-- EDITA AQUÍ: reemplaza los "#" por los enlaces reales de tus redes -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid" data-escalonar>
+      <div>
+        <a class="logo" href="#">Diany <span>ART</span></a>
+        <p class="footer-texto">Cerámicas hechas y pintadas a mano con mucho amor.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a href="https://wa.me/593979686640" target="_blank" rel="noopener">+593 97 968 6640</a></p>
+        <p>Ibarra – Ecuador</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a>
+          <a href="https://wa.me/593979686640" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>© <span id="anio">2026</span> Diany ART</span>
+      <a href="#">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- ---------- Carrito / calculadora ---------- -->
+  <aside class="resumen-barra oculto" id="resumen-barra" aria-label="Tu pedido">
+    <ul class="resumen-items" id="resumen-items"></ul>
+    <p class="resumen-aviso oculto" id="resumen-aviso">¡Llevas una docena o más! Pregunta por tu descuento al pedir.</p>
+    <div class="resumen-principal">
+      <button type="button" class="resumen-toggle" id="resumen-toggle" aria-expanded="false" aria-controls="resumen-items">
+        <svg class="icono"><use href="#i-bolsa"/></svg>
+        <span class="resumen-cifras">
+          <span id="resumen-unidades">0 piezas</span>
+          <strong id="resumen-total">$0.00</strong>
+        </span>
+        <span class="flecha">▴</span>
+      </button>
+      <button type="button" class="btn btn-secundario" id="btn-vaciar">Vaciar</button>
+      <button type="button" class="btn btn-primario" id="btn-pedir">Pedir</button>
+    </div>
+  </aside>
+
+  <script src="js/piezas.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
